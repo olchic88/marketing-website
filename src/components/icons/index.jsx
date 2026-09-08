@@ -1,0 +1,15 @@
+export { AddressIcon } from "./AddressIcon";
+export { PhoneIcon } from "./PhoneIcon";
+export { EmailIcon } from "./EmailIcon";
+export { LinkIcon } from "./LinkIcon";
+export { ConfirmationIcon } from "./ConfirmationIcon";
+export { CheckIcon } from "./CheckIcon";
+export { AccordionIcon } from "./AccordionIcon";
+export { YoutubeIcon } from "./YoutubeIcon";
+export { InstagramIcon } from "./InstagramIcon";
+export { FacebookIcon } from "./FacebookIcon";
+export { GitHubIcon } from "./GitHubIcon";
+export { XIcon } from "./XIcon";
+export { MenuIcon } from "./MenuIcon";
+export { CloseMenuIcon } from "./CloseMenuIcon";
+export { CheckCircleIcon } from "./CheckCircleIcon";
