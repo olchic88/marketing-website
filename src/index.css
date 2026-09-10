@@ -41,7 +41,7 @@ html,
 body {
   min-height: 100%; /* for gradient background */
   margin: 0;
-  padding-bottom: 40px;
+  padding: 0;
 }
 
 h1,

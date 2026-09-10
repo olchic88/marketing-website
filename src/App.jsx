@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import { Suspense } from "react";
 import MarketingLandingPage from "./pages/MarketingLandingPage";
+import FeaturesPage from "./pages/FeaturesPage";
 
 function App() {
   // throw new Error("Boom"); //
@@ -9,6 +10,7 @@ function App() {
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
           <Route path="/" element={<MarketingLandingPage />} />
+          <Route path="/features" element={<FeaturesPage />} />
           <Route path="*" element={<h1>This page was not found.</h1>} />
           {/* or the <NotFound /> component */}
         </Routes>
