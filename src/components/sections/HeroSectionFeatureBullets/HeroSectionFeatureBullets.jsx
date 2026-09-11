@@ -9,6 +9,10 @@ export default function HeroSectionFeatureBullets({
   alt,
   width,
   height,
+  primaryButtonText,
+  primaryButtonTo,
+  secondaryButtonText,
+  secondaryButtonTo,
 }) {
   return (
     <section className="hero-section-feature-bullets">
@@ -40,13 +44,18 @@ export default function HeroSectionFeatureBullets({
         </ul>
         <div className="hero-feature-bullets-actions">
           <div className="hero-feature-bullets-actions-btn">
-            <Button variant="secondary" size="xl" as="link" to="">
-              Learn more
+            <Button
+              variant="secondary"
+              size="xl"
+              as="link"
+              to={secondaryButtonTo}
+            >
+              {secondaryButtonText}
             </Button>
           </div>
           <div className="hero-feature-bullets-actions-btn">
-            <Button variant="primary" size="xl" as="link" to="">
-              See pricing
+            <Button variant="primary" size="xl" as="link" to={primaryButtonTo}>
+              {primaryButtonText}
             </Button>
           </div>
         </div>

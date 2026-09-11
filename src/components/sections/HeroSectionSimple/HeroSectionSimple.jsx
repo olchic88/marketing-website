@@ -9,6 +9,10 @@ export default function HeroSectionSimple({
   alt,
   width,
   height,
+  primaryButtonText,
+  primaryButtonTo,
+  secondaryButtonText,
+  secondaryButtonTo,
 }) {
   return (
     <section className="hero-section">
@@ -19,13 +23,18 @@ export default function HeroSectionSimple({
         </div>
         <div className="hero-actions">
           <div className="hero-actions-btn">
-            <Button as="link" to="#" variant="secondary" size="xl">
-              Learn more
+            <Button
+              as="link"
+              to={secondaryButtonTo}
+              variant="secondary"
+              size="xl"
+            >
+              {secondaryButtonText}
             </Button>
           </div>
           <div className="hero-actions-btn">
-            <Button as="link" to="#" variant="primary" size="xl">
-              See pricing
+            <Button as="link" to={primaryButtonTo} variant="primary" size="xl">
+              {primaryButtonText}
             </Button>
           </div>
         </div>
