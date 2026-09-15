@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import MarketingLandingPage from "./pages/MarketingLandingPage";
 import FeaturesPage from "./pages/FeaturesPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import PricingPage from "./pages/PricingPage";
 
 function App() {
   // throw new Error("Boom"); //
@@ -12,7 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<MarketingLandingPage />} />
           <Route path="/features" element={<FeaturesPage />} />
-          <Route path="/about" element={<AboutUsPage/>} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
 
           <Route path="*" element={<h1>This page was not found.</h1>} />
           {/* or the <NotFound /> component */}
