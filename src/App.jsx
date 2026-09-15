@@ -4,6 +4,7 @@ import MarketingLandingPage from "./pages/MarketingLandingPage";
 import FeaturesPage from "./pages/FeaturesPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import PricingPage from "./pages/PricingPage";
+import ContactUsPage from "./pages/ContactUsPage";
 
 function App() {
   // throw new Error("Boom"); //
@@ -15,6 +16,7 @@ function App() {
           <Route path="/features" element={<FeaturesPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/contact" element={<ContactUsPage/>} />
 
           <Route path="*" element={<h1>This page was not found.</h1>} />
           {/* or the <NotFound /> component */}
