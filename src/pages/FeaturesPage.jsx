@@ -160,6 +160,10 @@ export default function FeaturesPage() {
               alt="Colorful abstract geometric shapes"
               width={696}
               height={526}
+              primaryButtonText="See pricing"
+              primaryButtonTo="/pricing"
+              secondaryButtonText="Learn more"
+              secondaryButtonTo="/about"
             />
 
             <FeatureSectionGrid {...featureSectionGridData} />
