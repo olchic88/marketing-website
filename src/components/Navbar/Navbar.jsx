@@ -50,7 +50,7 @@ export default function Navbar({ navbarLinks, logoTo }) {
           <div className="navbar-actions">
             <Button
               as="link"
-              to="#"
+              to="/features"
               variant="secondary"
               size="lg"
               className="button-navbar-learn"
@@ -60,7 +60,7 @@ export default function Navbar({ navbarLinks, logoTo }) {
 
             <Button
               as="link"
-              to="#"
+              to="/pricing"
               variant="primary"
               size="lg"
               className="button-navbar-pricing"
@@ -121,7 +121,7 @@ export default function Navbar({ navbarLinks, logoTo }) {
         <div className="navbar-actions">
           <Button
             as="link"
-            to="#"
+            to="/features"
             variant="secondary"
             size="lg"
             className="button-navbar-learn"
@@ -131,7 +131,7 @@ export default function Navbar({ navbarLinks, logoTo }) {
           </Button>
           <Button
             as="link"
-            to="#"
+            to="/pricing"
             variant="primary"
             size="lg"
             className="button-navbar-pricing"
