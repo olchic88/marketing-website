@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router";
+import ScrollToTop from "./ScrollToTop";
 import { Suspense } from "react";
 import MarketingLandingPage from "./pages/MarketingLandingPage";
 import FeaturesPage from "./pages/FeaturesPage";
@@ -13,11 +14,11 @@ function App() {
   // throw new Error("Boom"); //
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <CookieConsent />
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
-
-          <Route element={<PageLayout/>}>
+          <Route element={<PageLayout />}>
             <Route path="/" element={<MarketingLandingPage />} />
             <Route path="/features" element={<FeaturesPage />} />
             <Route path="/about" element={<AboutUsPage />} />
