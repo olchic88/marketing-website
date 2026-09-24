@@ -35,15 +35,9 @@ export default function Navbar({ navbarLinks, logoTo }) {
           <ul className="navbar-links">
             {navbarLinks.map((link) => (
               <li key={link.id}>
-                {link.type === "anchor" ? (
-                  <a href={link.to} className="navbar-link link">
-                    {link.label}
-                  </a>
-                ) : (
-                  <Link to={link.to} className="navbar-link link">
-                    {link.label}
-                  </Link>
-                )}
+                <Link to={link.to} className="navbar-link link">
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -98,23 +92,13 @@ export default function Navbar({ navbarLinks, logoTo }) {
         <ul className="navbar-links">
           {navbarLinks.map((link) => (
             <li key={link.id}>
-              {link.type === "anchor" ? (
-                <a
-                  href={link.to}
-                  className="sidebar-link link"
-                  onClick={closeSidebar}
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  to={link.to}
-                  className="sidebar-link link"
-                  onClick={closeSidebar}
-                >
-                  {link.label}
-                </Link>
-              )}
+              <Link
+                to={link.to}
+                className="sidebar-link link"
+                onClick={closeSidebar}
+              >
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>
