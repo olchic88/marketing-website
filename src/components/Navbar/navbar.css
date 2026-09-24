@@ -87,6 +87,7 @@
 .navbar-logo a {
   display: inline-block;
   outline: none;
+  cursor: pointer;
 }
 
 .navbar-logo a:focus {
