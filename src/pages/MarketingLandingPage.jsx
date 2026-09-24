@@ -1,7 +1,3 @@
-import "../layouts/pageLayout.css";
-
-import Navbar from "../components/Navbar/Navbar";
-
 import HeroSectionSimple from "../components/sections/HeroSectionSimple/HeroSectionSimple";
 import prism from "../components/sections/HeroSectionSimple/prism.webp";
 
@@ -26,27 +22,6 @@ import abstract from "../components/sections/NewsletterSection/abstract.webp";
 
 import ContactSectionAPIPage from "../components/sections/ContactSection/ContactSectionAPIPage";
 
-import {
-  AddressIcon,
-  PhoneIcon,
-  EmailIcon,
-  LinkIcon,
-  InstagramIcon,
-  FacebookIcon,
-  YoutubeIcon,
-  GitHubIcon,
-  XIcon,
-} from "../components/icons";
-
-import Footer from "../components/Footer/Footer";
-
-const navbarLinks = [
-  { id: 1, label: "Home", to: "/", type: "anchor" },
-  { id: 2, label: "Features", to: "/features", type: "anchor" },
-  { id: 3, label: "Pricing", to: "/pricing", type: "anchor" },
-  { id: 4, label: "About us", to: "/about", type: "anchor" },
-  { id: 5, label: "Contact", to: "/contact", type: "anchor" },
-];
 
 const faqs = [
   {
@@ -96,131 +71,52 @@ const newsletterFeatures = [
   { id: 3, text: "Regular doses of artistic inspiration" },
 ];
 
-const contactDetails = [
-  {
-    id: 1,
-    icon: AddressIcon,
-    text: "123 Maple Street, Springfield, IL, USA",
-  },
-  {
-    id: 2,
-    icon: PhoneIcon,
-    text: "+1 (650) 555-0198",
-    href: "tel:+16505550198",
-  },
-  {
-    id: 3,
-    icon: EmailIcon,
-    text: "hello@abstractly.com",
-    href: "mailto:hello@abstractly.com",
-  },
-];
-
-const footerLinks = [
-  { id: 1, label: "Features", to: "/" },
-  { id: 2, label: "Pricing", to: "/" },
-  { id: 3, label: "About us", to: "/" },
-  { id: 4, label: "Contact", to: "/" },
-];
-
-const socialMediaLinks = [
-  {
-    id: 1,
-    label: "Youtube",
-    href: "/",
-    icon: <YoutubeIcon />,
-  },
-  {
-    id: 2,
-    label: "Instagram",
-    href: "/",
-    icon: <InstagramIcon />,
-  },
-  {
-    id: 3,
-    label: "Facebook",
-    href: "/",
-    icon: <FacebookIcon />,
-  },
-  {
-    id: 4,
-    label: "GitHub",
-    href: "/",
-    icon: <GitHubIcon />,
-  },
-  {
-    id: 5,
-    label: "X",
-    href: "/",
-    icon: <XIcon />,
-  },
-];
 
 export default function MarketingLandingPage() {
   return (
     <>
-      <title>Marketing Landing Page</title>
-      <div className="page">
-        <header className="page-header">
-          <Navbar navbarLinks={navbarLinks} logoTo={"/marketing"} />
-        </header>
-        <div className="page-content">
-          <main>
-            <HeroSectionSimple
-              title="Well crafted abstract images"
-              description="High quality abstract images for your projects, wallpaper and
+      <title>Abstractly | Abstract Images</title>
+
+      <HeroSectionSimple
+        title="Well crafted abstract images"
+        description="High quality abstract images for your projects, wallpaper and
                                 presentations."
-              src={prism}
-              alt="Colorful abstract geometric shapes"
-              width={696}
-              height={526}
-              primaryButtonText="See pricing"
-              primaryButtonTo="/pricing"
-              secondaryButtonText="Learn more"
-              secondaryButtonTo="/features"
-            />
+        src={prism}
+        alt="Colorful abstract geometric shapes"
+        width={696}
+        height={526}
+        primaryButtonText="See pricing"
+        primaryButtonTo="/pricing"
+        secondaryButtonText="Learn more"
+        secondaryButtonTo="/features"
+      />
 
-            <LogoMarqueeSection />
+      <LogoMarqueeSection />
 
-            <FeatureSectionGrid {...featureSectionGridData} />
+      <FeatureSectionGrid {...featureSectionGridData} />
 
-            <FeatureSectionImage
-              side="right"
-              {...featureSectionImageData.right}
-            />
-            <FeatureSectionImage
-              side="left"
-              {...featureSectionImageData.left}
-            />
+      <FeatureSectionImage side="right" {...featureSectionImageData.right} />
+      <FeatureSectionImage side="left" {...featureSectionImageData.left} />
 
-            <PricingSectionTiers
-              pricingSectionTiersData={pricingSectionTiersData}
-              plan={plan}
-              supportingText="Pricing Tiers"
-              title="Fit for all your needs"
-              subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
-            />
+      <PricingSectionTiers
+        pricingSectionTiersData={pricingSectionTiersData}
+        plan={plan}
+        supportingText="Pricing Tiers"
+        title="Fit for all your needs"
+        subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
+      />
 
-            <FAQSection faqs={faqs} />
+      <FAQSection faqs={faqs} />
 
-            <NewsletterSection
-              title="Get the finest curated abstracts delivered weekly to your inbox"
-              banner={abstract}
-              width={1176}
-              height={1216}
-              features={newsletterFeatures}
-            />
+      <NewsletterSection
+        title="Get the finest curated abstracts delivered weekly to your inbox"
+        banner={abstract}
+        width={1176}
+        height={1216}
+        features={newsletterFeatures}
+      />
 
-            <ContactSectionAPIPage />
-          </main>
-          <footer>
-            <Footer
-              footerLinks={footerLinks}
-              socialMediaLinks={socialMediaLinks}
-            />
-          </footer>
-        </div>
-      </div>
+      <ContactSectionAPIPage />
     </>
   );
 }

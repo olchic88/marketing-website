@@ -57,36 +57,34 @@ export default function ContactSectionAPIPage() {
 
   return (
     <>
-      <div className="fullpage">
-        <ContactSection
-          title="Talk to our team"
-          subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
-          contactDetails={[
-            {
-              id: 1,
-              icon: AddressIcon,
-              text: "123 Maple Street, Springfield, IL, USA",
-            },
-            {
-              id: 2,
-              icon: PhoneIcon,
-              text: "+1 (650) 555-0198",
-              href: "tel:+16505550198",
-            },
-            {
-              id: 3,
-              icon: EmailIcon,
-              text: "hello@abstractly.com",
-              href: "mailto:hello@abstractly.com",
-            },
-          ]}
-          onSubmit={(data) => mutation.mutate(data)} //  You call mutation.mutate() to execute the fetch request. The mutation.mutate() function accepts an object that will be forwarded to the mutationFn.
-          isSubmitting={mutation.isPending}
-          isSuccess={isSuccess} // for success confirmation
-          onReset={() => setIsSuccess(false)} // for "Send another message button" to delete confirmation overlay
-          isSubmitting={mutation.isPending} // to disable the button
-        />
-      </div>
+      <ContactSection
+        title="Talk to our team"
+        subtitle="We're committed to delivering the support you require to make your experience as smooth as possible."
+        contactDetails={[
+          {
+            id: 1,
+            icon: AddressIcon,
+            text: "123 Maple Street, Springfield, IL, USA",
+          },
+          {
+            id: 2,
+            icon: PhoneIcon,
+            text: "+1 (650) 555-0198",
+            href: "tel:+16505550198",
+          },
+          {
+            id: 3,
+            icon: EmailIcon,
+            text: "hello@abstractly.com",
+            href: "mailto:hello@abstractly.com",
+          },
+        ]}
+        onSubmit={(data) => mutation.mutate(data)} //  You call mutation.mutate() to execute the fetch request. The mutation.mutate() function accepts an object that will be forwarded to the mutationFn.
+        isSubmitting={mutation.isPending}
+        isSuccess={isSuccess} // for success confirmation
+        onReset={() => setIsSuccess(false)} // for "Send another message button" to delete confirmation overlay
+        isSubmitting={mutation.isPending} // to disable the button
+      />
 
       <div className={`toast ${toast ? "toast-visible" : ""}`}>
         {toast?.type === "error" && (

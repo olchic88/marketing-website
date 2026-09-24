@@ -7,6 +7,7 @@ import PricingPage from "./pages/PricingPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import CookieConsent from "./components/sections/CookieConsent/CookieConsent";
+import PageLayout from "./layouts/PageLayout";
 
 function App() {
   // throw new Error("Boom"); //
@@ -15,11 +16,14 @@ function App() {
       <CookieConsent />
       <Suspense fallback={<p>Loading...</p>}>
         <Routes>
-          <Route path="/" element={<MarketingLandingPage />} />
-          <Route path="/features" element={<FeaturesPage />} />
-          <Route path="/about" element={<AboutUsPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/contact" element={<ContactUsPage />} />
+
+          <Route element={<PageLayout/>}>
+            <Route path="/" element={<MarketingLandingPage />} />
+            <Route path="/features" element={<FeaturesPage />} />
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/contact" element={<ContactUsPage />} />
+          </Route>
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
