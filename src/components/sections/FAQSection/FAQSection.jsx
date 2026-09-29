@@ -4,7 +4,7 @@ import "./faqSection.css";
 
 import { useState } from "react";
 
-export default function FAQSection({ faqs, enableContactScroll = true }) {
+export default function FAQSection({ faqs, onContactClick }) {
   const [openItems, setOpenItems] = useState([]);
 
   function handleButtonClick(id) {
@@ -13,17 +13,8 @@ export default function FAQSection({ faqs, enableContactScroll = true }) {
     );
   }
 
-  function scrollToNameField() {
-    if (!enableContactScroll) {
-      return;
-    }
-    const inputName =
-      document.querySelector("#name"); /* in ContactSectionAPIPage */
-    if (!inputName) {
-      return;
-    }
-    inputName.focus({ preventScroll: true });
-    inputName.scrollIntoView({ behavior: "smooth", block: "center" });
+  function handleContactClick() {
+    onContactClick?.();
   }
 
   return (
@@ -69,17 +60,16 @@ export default function FAQSection({ faqs, enableContactScroll = true }) {
             </h5>
             <p>
               Reach out to our
-              <a
-                href="#"
+              <button
+                type="button"
                 className="link faq-section-support-card-link"
                 onClick={(e) => {
-                  e.preventDefault();
-                  scrollToNameField();
+                  handleContactClick();
                 }}
               >
                 {" "}
                 customer support{" "}
-              </a>
+              </button>
               team.
             </p>
           </div>
@@ -87,7 +77,7 @@ export default function FAQSection({ faqs, enableContactScroll = true }) {
             variant="primary"
             size="xl"
             className="faq-section-button"
-            onClick={scrollToNameField}
+            onClick={handleContactClick}
           >
             Get in touch
           </Button>

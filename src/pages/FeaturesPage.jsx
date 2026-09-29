@@ -1,3 +1,5 @@
+import { useScrollToContact } from "../hooks/useScrollToContact";
+
 import HeroSectionFeatureBullets from "../components/sections/HeroSectionFeatureBullets/HeroSectionFeatureBullets";
 import prismFeatureBullets from "../components/sections/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
@@ -15,8 +17,9 @@ import { faqs } from "../components/sections/FAQSection/faqData";
 
 import ContactSectionAPIPage from "../components/sections/ContactSection/ContactSectionAPIPage";
 
-
 export default function FeaturesPage() {
+  const { nameInputRef, scrollToContact } = useScrollToContact();
+
   return (
     <>
       <title>Abstractly | Features</title>
@@ -45,9 +48,9 @@ export default function FeaturesPage() {
 
       <TestimonialsSection testimonials={testimonials} />
 
-      <FAQSection faqs={faqs} />
+      <FAQSection faqs={faqs} onContactClick={scrollToContact} />
 
-      <ContactSectionAPIPage />
+      <ContactSectionAPIPage nameInputRef={nameInputRef} />
     </>
   );
 }

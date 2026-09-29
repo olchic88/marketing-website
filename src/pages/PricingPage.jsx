@@ -1,3 +1,5 @@
+import { useScrollToContact } from "../hooks/useScrollToContact";
+
 import PricingSectionTiers from "../components/sections/PricingSectionTiers/PricingSectionTiers";
 import {
   plan,
@@ -16,6 +18,8 @@ import { testimonials } from "../components/sections/TestimonialsSection/testimo
 import ContactSectionAPIPage from "../components/sections/ContactSection/ContactSectionAPIPage";
 
 export default function PricingPage() {
+  const { nameInputRef, scrollToContact } = useScrollToContact();
+
   return (
     <>
       <title>Abstractly | Pricing</title>
@@ -25,13 +29,13 @@ export default function PricingPage() {
         plan={plan}
       />
 
-      <FAQSection faqs={faqsPricing} />
+      <FAQSection faqs={faqsPricing} onContactClick={scrollToContact} />
 
       <FeatureSectionGrid {...featureSectionGridData} />
 
       <TestimonialsSection testimonials={testimonials} />
 
-      <ContactSectionAPIPage />
+      <ContactSectionAPIPage nameInputRef={nameInputRef} />
     </>
   );
 }

@@ -1,3 +1,5 @@
+import { useScrollToContact } from "../hooks/useScrollToContact";
+
 import HeroSectionSimple from "../components/sections/HeroSectionSimple/HeroSectionSimple";
 import prism from "../components/sections/HeroSectionSimple/prism.webp";
 
@@ -21,7 +23,6 @@ import NewsletterSection from "../components/sections/NewsletterSection/Newslett
 import abstract from "../components/sections/NewsletterSection/abstract.webp";
 
 import ContactSectionAPIPage from "../components/sections/ContactSection/ContactSectionAPIPage";
-
 
 const faqs = [
   {
@@ -71,8 +72,9 @@ const newsletterFeatures = [
   { id: 3, text: "Regular doses of artistic inspiration" },
 ];
 
-
 export default function MarketingLandingPage() {
+  const { nameInputRef, scrollToContact } = useScrollToContact();
+
   return (
     <>
       <title>Abstractly | Abstract Images</title>
@@ -106,7 +108,7 @@ export default function MarketingLandingPage() {
         subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
       />
 
-      <FAQSection faqs={faqs} />
+      <FAQSection faqs={faqs} onContactClick={scrollToContact} />
 
       <NewsletterSection
         title="Get the finest curated abstracts delivered weekly to your inbox"
@@ -116,7 +118,7 @@ export default function MarketingLandingPage() {
         features={newsletterFeatures}
       />
 
-      <ContactSectionAPIPage />
+      <ContactSectionAPIPage nameInputRef={nameInputRef} />
     </>
   );
 }

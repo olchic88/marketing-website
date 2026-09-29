@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import ContactSection from "../ContactSection/ContactSection";
 import { AddressIcon, PhoneIcon, EmailIcon } from "../../icons";
 
-export default function ContactSectionAPIPage() {
+export default function ContactSectionAPIPage({ nameInputRef }) {
   const [toast, setToast] = useState(null);
   // toast = { type: "success" | "error", message: string }
 
@@ -80,10 +80,10 @@ export default function ContactSectionAPIPage() {
           },
         ]}
         onSubmit={(data) => mutation.mutate(data)} //  You call mutation.mutate() to execute the fetch request. The mutation.mutate() function accepts an object that will be forwarded to the mutationFn.
-        isSubmitting={mutation.isPending}
         isSuccess={isSuccess} // for success confirmation
         onReset={() => setIsSuccess(false)} // for "Send another message button" to delete confirmation overlay
         isSubmitting={mutation.isPending} // to disable the button
+        nameInputRef={nameInputRef}
       />
 
       <div className={`toast ${toast ? "toast-visible" : ""}`}>
