@@ -29,7 +29,7 @@ export default function FeatureSectionImage({
         subtitleClassName={
           side === "left" ? "section-header-subtitle-left" : ""
         }
-      ></SectionHeader>
+      />
 
       <div className="feature-section-content">
         <ul className="feature-section-features">

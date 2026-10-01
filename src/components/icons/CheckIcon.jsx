@@ -13,8 +13,8 @@ export function CheckIcon({ size = 24 }) {
       />
       <path
         d="M9.64715 15.5245L10.0007 15.878L10.3543 15.5245L19.1931 6.68562L19.9002 7.39272L10.0007 17.2922L4.34383 11.6354L5.05093 10.9283L9.64715 15.5245Z"
-        fill="#6366F1"
-        stroke="#6366F1"
+        fill="currentColor"
+        stroke="currentColor"
       />
     </svg>
   );

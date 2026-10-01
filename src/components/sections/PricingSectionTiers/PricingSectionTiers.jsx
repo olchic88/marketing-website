@@ -12,6 +12,7 @@ export default function PricingSectionTiers({ pricingSectionTiersData, plan }) {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
       currency,
+      minimumFractionDigits: fractionDigits,
       maximumFractionDigits: fractionDigits,
     }).format(amount);
   }
@@ -22,7 +23,7 @@ export default function PricingSectionTiers({ pricingSectionTiersData, plan }) {
         supportingText="Pricing Tiers"
         title="Fit for all your needs"
         subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
-      ></SectionHeader>
+      />
 
       <div className="pricing-section-tiers-content">
         {/* segmented controls / segmented buttons */}

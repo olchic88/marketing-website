@@ -12,17 +12,6 @@
   background-size: cover;
 }
 
-.not-found-section-showcase {
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-
-.not-found-section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .not-found-section-header .section-header-content {
   align-items: flex-start;
 }
@@ -34,8 +23,6 @@
 .not-found-section-title {
   font-size: 2.25rem;
   line-height: 2.5rem;
-  font-weight: 600;
-  color: var(--color-primary);
 }
 
 .not-found-section-title,
@@ -58,13 +45,7 @@
     gap: 12px;
   }
 
-  .not-found-section-title {
-    font-size: 3rem;
-    line-height: 1;
-    font-weight: 600;
-  }
-
-  .notfound-btn {
+  .not-found-section-button {
     height: 60px;
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -80,13 +61,6 @@
       url(abstract-background.webp);
   }
 
-  /* for Tailwind */
-  .not-found-bg {
-    background-image:
-      linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 88.14%),
-      url(abstract-background.webp);
-  }
-
   .not-found-section-subtitle {
     padding: 0;
   }
@@ -94,6 +68,5 @@
   .not-found-section-title {
     font-size: 3.75rem;
     line-height: 1;
-    font-weight: 600;
   }
 }

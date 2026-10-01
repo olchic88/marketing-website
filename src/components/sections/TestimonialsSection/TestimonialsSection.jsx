@@ -13,7 +13,7 @@ export default function TestimonialsSection({ testimonials }) {
 
       <ul className="testimonials-section-cards-list">
         {testimonials.map((testimonial) => (
-          <li key={testimonial.id} className="testimonials-card-content">
+          <li key={testimonial.id} className="testimonials-section-card-wrapper">
             <TestimonialCard
               img={testimonial.image}
               name={testimonial.name}

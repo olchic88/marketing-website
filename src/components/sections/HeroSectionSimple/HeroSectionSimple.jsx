@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import "./heroSectionSimple.css";
 import Button from "../../ui/Button/Button";
 
