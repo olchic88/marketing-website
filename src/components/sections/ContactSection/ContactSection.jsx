@@ -97,7 +97,7 @@ export default function ContactSection({
     <section className="contact-section">
       <div className="contact-section-content-left">
         <div className="contact-section-header">
-          <h3 className="contact-section-title">{title}</h3>
+          <h2 className="contact-section-title">{title}</h2>
           <p>{subtitle}</p>
         </div>
         <address>

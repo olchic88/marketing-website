@@ -20,7 +20,7 @@ export default function FAQSection({ faqs, onContactClick }) {
   return (
     <section className="faq-section">
       <div className="faq-section-header">
-        <h3 className="faq-section-title">Frequently asked questions</h3>
+        <h2 className="faq-section-title">Frequently asked questions</h2>
         <p className="faq-section-subtitle">Choose any questions you need</p>
       </div>
       <div className="faq-section-content">
@@ -29,7 +29,7 @@ export default function FAQSection({ faqs, onContactClick }) {
             const isOpen = openItems.includes(faq.id);
             return (
               <li className="faq-section-accordion" key={faq.id}>
-                <h4>
+                <h3>
                   <button
                     className="faq-section-label ax-button"
                     type="button"
@@ -42,7 +42,7 @@ export default function FAQSection({ faqs, onContactClick }) {
                       className="faq-section-icon"
                     />
                   </button>
-                </h4>
+                </h3>
 
                 <div
                   className={`faq-section-panel-wrapper ${isOpen ? "open" : ""}`}
@@ -55,9 +55,9 @@ export default function FAQSection({ faqs, onContactClick }) {
         </ul>
         <div className="faq-section-support-card">
           <div className="faq-section-support-card-content">
-            <h5 className="faq-section-support-card-title">
+            <h3 className="faq-section-support-card-title">
               Can’t find the answer you’re looking for?
-            </h5>
+            </h3>
             <p>
               Reach out to our
               <button

@@ -18,11 +18,11 @@ export default function HeroSectionFeatureBullets({
   return (
     <section className="hero-section-feature-bullets">
       <div className="hero-feature-bullets-content">
-        <h3 className="hero-feature-bullets-title">{title}</h3>
+        <h1 className="hero-feature-bullets-title">{title}</h1>
         <ul className="hero-feature-bullets">
           {bullets.map((bullet) => (
             <li key={bullet.id}>
-              <CheckIcon/>
+              <CheckIcon />
               {bullet.text}
             </li>
           ))}

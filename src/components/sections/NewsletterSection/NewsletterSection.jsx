@@ -38,7 +38,7 @@ export default function NewsletterSection({
     <section className="newsletter-section">
       <div className="newsletter-section-wrapper">
         <div className="newsletter-section-content">
-          <h3 className="newsletter-section-title">{title}</h3>
+          <h2 className="newsletter-section-title">{title}</h2>
           <ul className="newsletter-section-features">
             {features.map((feature) => {
               return (

@@ -27,6 +27,8 @@ export default function PricingPage() {
       <PricingSectionTiers
         pricingSectionTiersData={pricingSectionTiersData}
         plan={plan}
+        heading="h1"
+        planHeading="h2"
       />
 
       <FAQSection faqs={faqsPricing} onContactClick={scrollToContact} />

@@ -6,7 +6,7 @@ export default function LogoMarqueeSection() {
   return (
     <section className="logo-marquee-section">
       <div className="logo-marquee-section-content">
-        <h3>Used by teams that you love</h3>
+        <h2>Used by teams that you love</h2>
         <div className="logo-marquee-section-logos-wrapper">
           <div className="logo-marquee-section-logos">
             <LogoStrip logos={logos} />

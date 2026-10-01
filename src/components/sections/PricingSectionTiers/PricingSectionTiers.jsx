@@ -4,7 +4,12 @@ import Button from "../../ui/Button/Button";
 import { CheckCircleIcon } from "../../icons";
 import SectionHeader from "../../ui/SectionHeader/SectionHeader";
 
-export default function PricingSectionTiers({ pricingSectionTiersData, plan }) {
+export default function PricingSectionTiers({
+  pricingSectionTiersData,
+  plan,
+  heading = "h2",
+  planHeading = "h3",
+}) {
   const [billingPeriod, setBillingPeriod] = useState("monthly");
   const [activePlan, setActivePlan] = useState("standard");
 
@@ -23,6 +28,7 @@ export default function PricingSectionTiers({ pricingSectionTiersData, plan }) {
         supportingText="Pricing Tiers"
         title="Fit for all your needs"
         subtitle="Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out."
+        heading={heading}
       />
 
       <div className="pricing-section-tiers-content">
@@ -56,7 +62,7 @@ export default function PricingSectionTiers({ pricingSectionTiersData, plan }) {
                   <p className="pricing-section-tiers-badge">Most popular</p>
                 )}
                 <div className="pricing-section-tiers-plan-header">
-                  <h4>{planMeta.title}</h4>
+                  <PlanHeading>{planMeta.title}</PlanHeading>
                   <p>{planMeta.description}</p>
                 </div>
 

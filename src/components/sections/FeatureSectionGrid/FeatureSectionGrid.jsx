@@ -17,9 +17,9 @@ export default function FeatureSectionGrid({ features }) {
               {feature.icon}
             </div>
             <div className="feature-section-grid-feature-content">
-              <h4 className="feature-section-grid-feature-content-title">
+              <h3 className="feature-section-grid-feature-content-title">
                 {feature.title}
-              </h4>
+              </h3>
               <p className="feature-section-grid-feature-content-text">
                 {feature.text}
               </p>

@@ -22,7 +22,7 @@ export default function TeamSection({ members }) {
             />
             <div className="team-section-member-info">
               <div className="team-section-member-info-header">
-                <h4 className="team-section-member-name">{member.name}</h4>
+                <h3 className="team-section-member-name">{member.name}</h3>
                 <p className="team-section-member-designation">
                   {member.designation}
                 </p>

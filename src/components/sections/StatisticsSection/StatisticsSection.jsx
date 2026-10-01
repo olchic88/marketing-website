@@ -27,12 +27,15 @@ export default function StatisticsSection({
             <p>No statistics available</p>
           ) : (
             <ul className="statistics-section-stats">
-              {statistics.map((card) => (
-                <li key={card.id} className="statistics-section-stats-card">
+              {statistics.map((statistic) => (
+                <li
+                  key={statistic.id}
+                  className="statistics-section-stats-card"
+                >
                   <p className="statistics-section-stats-card-number">
-                    {card.value}
+                    {statistic.value}
                   </p>
-                  <p>{card.metric}</p>
+                  <p>{statistic.metric}</p>
                 </li>
               ))}
             </ul>

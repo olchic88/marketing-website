@@ -37,9 +37,9 @@ export default function FeatureSectionImage({
             <li key={feature.id} className="feature-section-feature">
               <div className="feature-section-feature-icon">{feature.icon}</div>
               <div className="feature-section-feature-content">
-                <h5 className="feature-section-feature-content-title">
+                <h3 className="feature-section-feature-content-title">
                   {feature.title}
-                </h5>
+                </h3>
                 <p className="feature-section-feature-content-text">
                   {feature.text}
                 </p>

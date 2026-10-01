@@ -17,7 +17,7 @@ export default function HeroSectionSimple({
     <section className="hero-section">
       <div className="hero-content">
         <div className="hero-header">
-          <h3 className="hero-title">{title}</h3>
+          <h1 className="hero-title">{title}</h1>
           <p className="hero-description">{description}</p>
         </div>
         <div className="hero-actions">
