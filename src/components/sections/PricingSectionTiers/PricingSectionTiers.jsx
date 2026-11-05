@@ -13,6 +13,8 @@ export default function PricingSectionTiers({
   const [billingPeriod, setBillingPeriod] = useState("monthly");
   const [activePlan, setActivePlan] = useState("standard");
 
+  const PlanHeading = planHeading;
+
   function formatPrice(amount, currency, fractionDigits = 2) {
     return new Intl.NumberFormat("en-US", {
       style: "currency",

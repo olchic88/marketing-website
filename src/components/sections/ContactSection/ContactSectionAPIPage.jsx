@@ -86,16 +86,18 @@ export default function ContactSectionAPIPage({ nameInputRef }) {
         nameInputRef={nameInputRef}
       />
 
-      <div className={`toast ${toast ? "toast-visible" : ""}`}>
-        {toast?.type === "error" && (
-          <div className={`toast-content toast-content-error`}>
-            <p className={`toast-badge toast-badge-error`}>
-              {toast.type[0].toUpperCase() + toast.type.substring(1)}
-            </p>
-            <p>{toast.message}</p>
-          </div>
-        )}
-      </div>
+      {toast && (
+        <div className={`toast toast-visible`}>
+          {toast?.type === "error" && (
+            <div className={`toast-content toast-content-error`}>
+              <p className={`toast-badge toast-badge-error`}>
+                {toast.type[0].toUpperCase() + toast.type.substring(1)}
+              </p>
+              <p>{toast.message}</p>
+            </div>
+          )}
+        </div>
+      )}
     </>
   );
 }

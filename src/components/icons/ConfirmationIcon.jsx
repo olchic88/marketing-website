@@ -9,7 +9,7 @@ export function ConfirmationIcon({ size }) {
     >
       <path
         d="M13.3344 20.2279L25.591 7.97137L27.4766 9.85699L13.3344 23.9991L4.84912 15.5139L6.73473 13.6283L13.3344 20.2279Z"
-        fill="#15803d"
+        fill="var(--color-success)"
       />
     </svg>
   );

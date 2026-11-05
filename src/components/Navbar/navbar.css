@@ -104,13 +104,13 @@
   padding: 0 2px;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #525252;
+  color: var(--color-secondary);
   font-weight: 500;
 }
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #171717;
+  color: var(--color-primary);
 }
 
 .sidebar-link {

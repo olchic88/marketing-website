@@ -106,13 +106,13 @@ input:checked + .switch-slider::before {
 }
 
 input:checked + .switch-slider {
-  background-color: #4338ca;
+  background-color: var(--bg-brand-primary);
   border: 1px solid #4338ca;
 }
 
 input:checked:not(:disabled):hover + .switch-slider,
 input:checked:not(:disabled):focus + .switch-slider {
-  background-color: #3730a3;
+  background-color: var(--bg-brand-primary-emphasize);
 }
 
 input:not(:disabled):hover + .switch-slider,
@@ -137,7 +137,7 @@ input:focus + .switch-slider {
 }
 
 input:checked:focus + .switch-slider {
-  border: 1px solid #4f46e5;
+  border: 1px solid var(--border-brand-solid);
   box-shadow: 0px 0px 0px 4px rgba(68, 76, 231, 0.12);
 }
 
