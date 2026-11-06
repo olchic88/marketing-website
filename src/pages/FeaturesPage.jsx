@@ -24,6 +24,11 @@ export default function FeaturesPage() {
     <>
       <title>Abstractly | Features</title>
 
+      <meta
+        name="description"
+        content="Explore Abstractly features, including 5K image resolution, multiple formats, and Retina display support for your creative projects."
+      />
+
       <HeroSectionFeatureBullets
         title="Premium abstract images"
         bullets={[

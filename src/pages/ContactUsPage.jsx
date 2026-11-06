@@ -12,6 +12,11 @@ export default function ContactUsPage() {
     <>
       <title>Abstractly | Contact</title>
 
+      <meta
+        name="description"
+        content="Get in touch with Abstractly. Contact our team with questions, feedback, or inquiries about our abstract images and services."
+      />
+
       <ContactSectionAPIPage nameInputRef={nameInputRef} />
 
       <FAQSection faqs={faqs} onContactClick={scrollToContact} />

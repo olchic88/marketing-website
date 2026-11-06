@@ -79,6 +79,11 @@ export default function MarketingLandingPage() {
     <>
       <title>Abstractly | Abstract Images</title>
 
+      <meta
+        name="description"
+        content="High quality abstract images for your projects, wallpaper and presentations."
+      />
+
       <HeroSectionSimple
         title="Well crafted abstract images"
         description="High quality abstract images for your projects, wallpaper and

@@ -24,6 +24,11 @@ export default function PricingPage() {
     <>
       <title>Abstractly | Pricing</title>
 
+      <meta
+        name="description"
+        content="Explore Abstractly pricing plans and find the right option for accessing high-quality abstract images for your projects."
+      />
+
       <PricingSectionTiers
         pricingSectionTiersData={pricingSectionTiersData}
         plan={plan}

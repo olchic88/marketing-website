@@ -51,6 +51,11 @@ export default function AboutUsPage() {
     <>
       <title>Abstractly | About Us</title>
 
+      <meta
+        name="description"
+        content="Discover Abstractly, our mission, and the team creating high-quality abstract images for everyone."
+      />
+
       <HeroSectionSimple
         title="From a tiny desk to the entire world"
         description="As a lean, passionate team, we've made something that most would think is impossible - premium abstract images for free and for all."
