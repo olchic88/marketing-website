@@ -71,6 +71,9 @@ export const featureSectionImageData = {
     subtitle:
       "In a world where storytelling constantly evolves, don't let licensing and poor support hold you down",
     image: unsplashLeft,
+    alt: "Colorful abstract geometric shapes",
+    width: 2304,
+    height: 4096,
     features: [
       {
         icon: (
