@@ -1,5 +1,7 @@
 import { useScrollToContact } from "../hooks/useScrollToContact";
 
+import PageMeta from "../components/PageMeta/PageMeta";
+
 import HeroSectionFeatureBullets from "../components/sections/HeroSectionFeatureBullets/HeroSectionFeatureBullets";
 import prismFeatureBullets from "../components/sections/HeroSectionFeatureBullets/prismFeatureBullets.webp";
 
@@ -22,11 +24,10 @@ export default function FeaturesPage() {
 
   return (
     <>
-      <title>Abstractly | Features</title>
-
-      <meta
-        name="description"
-        content="Explore Abstractly features, including 5K image resolution, multiple formats, and Retina display support for your creative projects."
+      <PageMeta
+        title="Abstractly | Features"
+        description="Explore Abstractly features, including 5K image resolution, multiple formats, and Retina display support for your creative projects."
+        url="https://YOUR-DOMAIN.com/features"
       />
 
       <HeroSectionFeatureBullets

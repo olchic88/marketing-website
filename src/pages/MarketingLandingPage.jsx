@@ -1,5 +1,7 @@
 import { useScrollToContact } from "../hooks/useScrollToContact";
 
+import PageMeta from "../components/PageMeta/PageMeta";
+
 import HeroSectionSimple from "../components/sections/HeroSectionSimple/HeroSectionSimple";
 import prism from "../components/sections/HeroSectionSimple/prism.webp";
 
@@ -77,11 +79,10 @@ export default function MarketingLandingPage() {
 
   return (
     <>
-      <title>Abstractly | Abstract Images</title>
-
-      <meta
-        name="description"
-        content="High quality abstract images for your projects, wallpaper and presentations."
+      <PageMeta
+        title="Abstractly | Abstract Images"
+        description="High quality abstract images for your projects, wallpaper and presentations."
+        url="https://YOUR-DOMAIN.com/"
       />
 
       <HeroSectionSimple

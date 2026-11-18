@@ -1,3 +1,5 @@
+import PageMeta from "../components/PageMeta/PageMeta";
+
 import HeroSectionSimple from "../components/sections/HeroSectionSimple/HeroSectionSimple";
 import prism from "../components/sections/HeroSectionSimple/prism.webp";
 
@@ -49,11 +51,10 @@ const members = [
 export default function AboutUsPage() {
   return (
     <>
-      <title>Abstractly | About Us</title>
-
-      <meta
-        name="description"
-        content="Discover Abstractly, our mission, and the team creating high-quality abstract images for everyone."
+      <PageMeta
+        title="Abstractly | About Us"
+        description="Discover Abstractly, our mission, and the team creating high-quality abstract images for everyone."
+        url="https://YOUR-DOMAIN.com/about"
       />
 
       <HeroSectionSimple

@@ -1,5 +1,7 @@
 import { useScrollToContact } from "../hooks/useScrollToContact";
 
+import PageMeta from "../components/PageMeta/PageMeta";
+
 import PricingSectionTiers from "../components/sections/PricingSectionTiers/PricingSectionTiers";
 import {
   plan,
@@ -22,11 +24,10 @@ export default function PricingPage() {
 
   return (
     <>
-      <title>Abstractly | Pricing</title>
-
-      <meta
-        name="description"
-        content="Explore Abstractly pricing plans and find the right option for accessing high-quality abstract images for your projects."
+      <PageMeta
+        title="Abstractly | Pricing"
+        description="Explore Abstractly pricing plans and find the right option for accessing high-quality abstract images for your projects."
+        url="https://YOUR-DOMAIN.com/pricing"
       />
 
       <PricingSectionTiers
